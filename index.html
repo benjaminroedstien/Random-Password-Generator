@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <link href="index.css" rel="stylesheet">
+  
+</head>
+
+
+<body>
+    
+    <main>
+        <div>
+            <h1>Generate a</h1>
+            <h2>random password</h2>
+            <p id="white-p">Never use an insecure password again.</p>
+            <div class="input-field-and-button">
+                <p id="white-p2">Type in desired password length between 7-24 characters:</p>
+            <input inputmode="numeric" input type="number" id="NumberInput" name="NumberInput" min="7" max="24" value="7">
+            <button id="GeneratePasswordButton"><img src="images/Icon.png" height="18px" width="14px"> Generate passwords</button>
+            </div>
+
+        </div>
+        <div id="checkboxes">
+            <input type="checkbox" name="IncludeUppercaseLowercase"   id="IncludeUppercaseLowercase"><p class="checkboxParagraphs">Uppercase/Lowercase</p>
+            <input type="checkbox" name="IncludeNumbers"   id="IncludeNumbers"><p class="checkboxParagraphs">Numbers</p>
+            <input type="checkbox" name="IncludeSymbols"   id="IncludeSymbols"><p class="checkboxParagraphs">Symbols</p>
+        </div>
+        <div class="pws">
+          
+            <p id="tiles-i" onclick="copyPw1()" ><span id="pwi" onclick="copypw1()"><img src="images/Icon3.png" height="5px" width="20px"></span></p>
+            <p id="tiles-ii" onclick="copyPw2()"><span id="pwii" onclick="copyPw2()"><img src="images/Icon3.png" height="5px" width="20px"></span></p>
+        </div>
+
+        <div class="pw-block">
+            <p id="tiles-iii" onclick="copyPw3()"><span id="pwiii" onclick="copyPw3()"><img src="images/Icon3.png" height="5px" width="20px"></span></p>
+            <p id="tiles-iv" onclick="copyPw4()"><span id="pwiv" onclick="copyPw4()"><img src="images/Icon3.png" height="5px" width="20px"></span></p>
+        </div>
+    </div>
+    
+  
+    </main>
+
+    <script src="index.js"></script>
+</body>
