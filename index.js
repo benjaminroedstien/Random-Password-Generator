@@ -8,6 +8,11 @@ var UpperCaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"
 var NumbersArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var SymbolsArray =  ["~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "=", "{", "[", "}", "]", ",", "|", ":", ";", "<", ">", ".", "?", "/"];
 
+   //========================================================================================================================================\\
+  // Eventlistener som via true boolean skyter storbokstav-array inn i Actual på posisjon 26 og sletter 26 karakterer på posisjon 26 på false \\
+ // ===========================================================================================================================================\\
+
+
 CheckBoxUpperCase.addEventListener("change", (e) =>{
 if (e.target.checked == true){
     Actual.splice(26, 0, "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
@@ -18,7 +23,9 @@ if (e.target.checked == true){
 }
 })
 
-
+   //==========================================================================================\\
+  // Eventlistener som via true boolean skyter nummer-array inn i Actual og sletter de på false \\
+ // =============================================================================================\\
 
 CheckBoxNumbers.addEventListener("change", (e) =>{
     if (e.target.checked == true){
@@ -61,9 +68,9 @@ CheckBoxNumbers.addEventListener("change", (e) =>{
         }
 })
 
-   //=====================================================================\\
-  // Generate Password Function triggered by eventlistener for HTML button \\
- // ========================================================================\\
+   //==========================================================================================\\
+  // Eventlistener som via true boolean skyter symbol-array inn i Actual og sletter de på false \\
+ // =============================================================================================\\
 
 CheckBoxSymbols.addEventListener("change", (e) =>{
     if (e.target.checked == true){
